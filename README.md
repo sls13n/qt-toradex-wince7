@@ -2,7 +2,7 @@
 
 ## Requirements
 
-- Visual Studio 2008 Command Prompt
+- Visual Studio 2008 SP1
 - Windows CE 7.0 SDK (Platform Builder)
 - Qt 5.1.0 source code, download from https://download.qt.io/archive/qt/5.1/5.1.0/single/qt-everywhere-opensource-src-5.1.0.zip 
 - Perl for Windows, download from https://strawberryperl.com/   
