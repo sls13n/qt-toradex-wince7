@@ -1,0 +1,30 @@
+diff -urN qt-everywhere-opensource-src-5.1.0/qtbase/src/gui/opengl/qopengles2ext.h qt-everywhere-opensource-src-5.1.0_changed/qtbase/src/gui/opengl/qopengles2ext.h
+--- qt-everywhere-opensource-src-5.1.0/qtbase/src/gui/opengl/qopengles2ext.h	2026-01-02 18:00:06.437431400 +0000
++++ qt-everywhere-opensource-src-5.1.0_changed/qtbase/src/gui/opengl/qopengles2ext.h	2026-01-01 18:37:33.897012600 +0000
+@@ -13,6 +13,13 @@
+ extern "C" {
+ #endif
+ 
++// Define 64-bit types for Windows CE if not already defined
++#if defined(UNDER_CE) && !defined(GLint64) && !defined(GLuint64)
++typedef signed long long GLint64;
++typedef unsigned long long GLuint64;
++typedef struct __GLsync *GLsync;
++#endif
++
+ /*
+  * This document is licensed under the SGI Free Software B License Version
+  * 2.0. For details, see http://oss.sgi.com/projects/FreeB/ .
+@@ -399,10 +406,12 @@
+  * If any other extensions using these types are defined,
+  * the typedefs must move out of this block and be shared.
+  */
++#if !defined(UNDER_CE)
+ typedef khronos_int64_t GLint64;
+ typedef khronos_uint64_t GLuint64;
+ typedef struct __GLsync *GLsync;
+ #endif
++#endif
+ 
+ #define GL_SYNC_OBJECT_APPLE                                    0x8A53
+ #define GL_MAX_SERVER_WAIT_TIMEOUT_APPLE                        0x9111
