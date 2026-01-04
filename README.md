@@ -3,7 +3,9 @@
 ## Requirements
 
 - Visual Studio 2008 SP1
-- Windows CE 7.0 SDK (Platform Builder)
+- Windows Embedded Compact 7 (Platform Builder)
+- Windows Embedded Compact 7 updates for VS2008 [1](https://docs.toradex.com/109412-vs90sp1-kb2483802-x86.exe), [2](https://docs.toradex.com/109413-visualstudiodevicewindowsembeddedcompact7.msi) 
+- Toradex CE7 SDK https://docs.toradex.com/102481 
 - Qt 5.1.0 source code, download from https://download.qt.io/archive/qt/5.1/5.1.0/single/qt-everywhere-opensource-src-5.1.0.zip 
 - Perl for Windows, download from https://strawberryperl.com/   
 
