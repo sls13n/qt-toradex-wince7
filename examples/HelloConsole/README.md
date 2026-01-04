@@ -1,6 +1,6 @@
-# Hello World Console Application
+# Description
 
-Simple Qt console application that outputs "Hello World" to stdout.
+Simple Qt console application that outputs "Hello World" to stdout to test ARM build of Qt
 
 ## Prerequisites
 
@@ -25,3 +25,7 @@ The compiled executable will be in the `release\` folder:
 ## Deployment
 
 Copy `helloworld.exe` and required Qt DLLs (`Qt5Core.dll`) to your WinCE device and run.
+
+## Testing
+
+Can be tested on Windows CE 7 Qemu ARM build: https://github.com/Milek7/wince-qemu  
